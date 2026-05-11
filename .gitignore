@@ -1,0 +1,12 @@
+# Arquivos de configuração local (com senha do banco)
+config/local.php
+
+# Pasta de dependências (se usar Composer no futuro)
+vendor/
+
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Logs de erro PHP
+*.log
