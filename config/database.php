@@ -2,7 +2,7 @@
 define('DB_HOST', 'localhost');
 define('DB_NAME', 'mini_sistema');
 define('DB_USER', 'root');
-define('DB_PASS', '');
+define('DB_PASS', '525263');
 define('DB_CHARSET', 'utf8mb4');
 
 function getConexao(): PDO {
