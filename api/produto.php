@@ -8,7 +8,7 @@ require_once __DIR__ . '/../models/Produto.php';
 $produto = new Produto();
 
 $metodo = $_SERVER['REQUEST_METHOD'];
-$acao   = $_GET['acao'] ?? '';
+$acao   = $_GET['acao'] ?? ''; 
 
 switch ($metodo) {
     case 'GET':

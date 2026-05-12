@@ -40,7 +40,7 @@ async function salvarProduto(dados) {
   });
 
   const json = await resposta.json();
-  if (json.sucesso) {
+  if (json.sucesso) { 
     carregarProdutos();
     fecharModal();
   } else {

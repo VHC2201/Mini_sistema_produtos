@@ -11,8 +11,7 @@ class Usuario extends Model {
             return false;
         }
 
-        $senhaHash = hash('sha256', $senha); // SHA-256
-
+        $senhaHash = hash('sha256', $senha); 
         $stmt = $this->db->prepare("
             INSERT INTO usuarios (nome, email, senha_hash) VALUES (:nome, :email, :senha_hash)
         ");

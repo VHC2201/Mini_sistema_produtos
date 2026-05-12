@@ -47,4 +47,4 @@ document.getElementById('btn-adicionar-carrinho')?.addEventListener('click', asy
   } else {
     alert('Erro ao adicionar produtos.');
   }
-});
+}); 

@@ -28,4 +28,4 @@ if (file_exists($arquivo)) {
 } else {
     http_response_code(404);
     echo '<h1>Página não encontrada</h1>';
-}
+} 

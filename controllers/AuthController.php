@@ -9,6 +9,7 @@ function verificarLogin(): void {
     }
 }
 
+
 function gerarCsrfToken(): string {
     if (session_status() === PHP_SESSION_NONE) session_start();
     if (empty($_SESSION['csrf_token'])) {
