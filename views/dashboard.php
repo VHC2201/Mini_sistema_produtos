@@ -1,27 +1,29 @@
 <?php
-require_once __DIR__ . '/../controllers/AuthController.php';
+if (session_status() === PHP_SESSION_NONE) session_start();
+
+define('ROOT_PATH', realpath(__DIR__ . '/..'));
+
+require_once ROOT_PATH . '/controllers/AuthController.php';
 verificarLogin();
 
-require_once __DIR__ . '/../models/Produto.php';
-require_once __DIR__ . '/../models/Fornecedor.php';
-require_once __DIR__ . '/../models/Cesta.php';
+require_once ROOT_PATH . '/models/Produto.php';
+require_once ROOT_PATH . '/models/Fornecedor.php';
+require_once ROOT_PATH . '/models/Cesta.php';
 
-$totalProdutos    = count((new Produto())->buscarTodos());
+$totalProdutos     = count((new Produto())->buscarTodos());
 $totalFornecedores = count((new Fornecedor())->buscarTodos());
-$cestaAtiva       = (new Cesta())->buscarCestaAtiva((int)$_SESSION['usuario_id']);
-$totalCarrinho    = $cestaAtiva ? count((new Cesta())->buscarItens((int)$cestaAtiva['id'])) : 0;
+$cestaAtiva        = (new Cesta())->buscarCestaAtiva((int)$_SESSION['usuario_id']);
+$totalCarrinho     = $cestaAtiva ? count((new Cesta())->buscarItens((int)$cestaAtiva['id'])) : 0;
 
 $tituloPagina = 'Dashboard — Mini Sistema';
 include __DIR__ . '/partials/header.php';
 include __DIR__ . '/partials/navbar.php';
 ?>
-
 <div class="container py-4">
   <div class="mb-4">
     <h2 class="h4 fw-semibold">Dashboard</h2>
     <p class="text-muted small">Bem-vindo, <?= htmlspecialchars($_SESSION['usuario_nome']) ?>!</p>
   </div>
-
   <div class="row g-3 mb-4">
     <div class="col-md-4">
       <div class="card p-3 h-100">
@@ -45,7 +47,6 @@ include __DIR__ . '/partials/navbar.php';
       </div>
     </div>
   </div>
-
   <h5 class="fw-semibold mb-3">Acesso rápido</h5>
   <div class="row g-3">
     <div class="col-md-4">
@@ -68,5 +69,4 @@ include __DIR__ . '/partials/navbar.php';
     </div>
   </div>
 </div>
-
 <?php include __DIR__ . '/partials/footer.php'; ?>
