@@ -33,7 +33,7 @@
 
 ## Esboços de Tela (Figma)
 
-![Login](docs/figma/tela-login.png)
+![Login](docs/figma/tela-login.webp)
 ![Dashboard](docs/figma/tela-dashboard.png)
 ![Vitrine](docs/figma/tela-vitrine.png)
 ![Carrinho](docs/figma/tela-carrinho.png)
