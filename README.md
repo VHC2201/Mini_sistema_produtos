@@ -37,6 +37,7 @@
 ![Dashboard](docs/figma/tela-dashboard.png)
 ![Vitrine](docs/figma/tela-vitrine.png)
 ![Carrinho](docs/figma/tela-carrinho.png)
+![Produtos](docs/figma/tela-crud-produtos.png)
 
 ## Diagrama Entidade-Relacionamento
 
