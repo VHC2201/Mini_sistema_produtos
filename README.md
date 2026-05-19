@@ -127,7 +127,7 @@ http://localhost/Mini_sistema_produtos?pagina=cadastro
 
 ---
 
-## 📁 Estrutura de Pastas
+##  Estrutura de Pastas
 
 ```
 Mini_sistema_produtos/
@@ -177,13 +177,13 @@ Mini_sistema_produtos/
 
 ---
 
-## 🗄️ Diagrama Entidade-Relacionamento (DER)
+##  Diagrama Entidade-Relacionamento (DER)
 
 ![DER](docs/der.png)
 
 ---
 
-## 🖥️ Esboços de Tela
+##  Esboços de Tela
 
 | Tela | Preview |
 |------|---------|
@@ -196,7 +196,7 @@ Mini_sistema_produtos/
 
 ---
 
-## 🔒 Segurança implementada
+##  Segurança implementada
 
 | Ameaça | Solução |
 |--------|---------|
@@ -210,7 +210,7 @@ Mini_sistema_produtos/
 
 ---
 
-## 📝 Observações
+##  Observações
 
 - Cada produto pode aparecer **apenas uma vez** por cesta (regra de negócio definida pela atividade)
 - A senha é armazenada usando `hash('sha256', $senha)` conforme especificado na atividade
