@@ -26,7 +26,7 @@
 
 ### Passos
 1. Clone o repositório:
-   git clone https://github.com/seu-usuario/mini-sistema-produtos.git
+   git clone https://github.com/VHC2201/Mini_sistema_produtos
 2. Inicie o Apache e o MySQL no seu servidor local
 3. Acesse http://localhost/mini_sistema_produtos ou http://localhost:8080
 4. O banco de dados e as tabelas são criados automaticamente no primeiro acesso
