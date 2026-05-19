@@ -1,13 +1,33 @@
-# Arquivos de configuração local (com senha do banco)
-config/local.php
+# ── Configuração local com credenciais (NUNCA versionar) ────
 config/database.php
 
-# Pasta de dependências (se usar Composer no futuro)
-vendor/
+# ── Logs de erro PHP ────────────────────────────────────────
+*.log
+erros.log
+php_errors.log
 
-# Arquivos do sistema operacional
+# ── Arquivos de sistema operacional ─────────────────────────
 .DS_Store
 Thumbs.db
+desktop.ini
 
-# Logs de erro PHP
-*.log
+# ── Editores e IDEs ─────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ── Dependências (se usar Composer no futuro) ────────────────
+vendor/
+composer.lock
+
+# ── Arquivos temporários ─────────────────────────────────────
+/tmp/
+*.tmp
+*.bak
+*.orig
+
+# ── Uploads de usuário (dados sensíveis) ────────────────────
+uploads/
+public/uploads/
