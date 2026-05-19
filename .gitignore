@@ -1,5 +1,6 @@
 # Arquivos de configuração local (com senha do banco)
 config/local.php
+config/database.php
 
 # Pasta de dependências (se usar Composer no futuro)
 vendor/
