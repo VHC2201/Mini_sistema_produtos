@@ -28,8 +28,7 @@
 1. Clone o repositório:
    git clone https://github.com/seu-usuario/mini-sistema-produtos.git
 2. Inicie o Apache e o MySQL no seu servidor local
-3. Acesse http://localhost/mini_sistema_produtos ou htt
-p://localhost:8080
+3. Acesse http://localhost/mini_sistema_produtos ou http://localhost:8080
 4. O banco de dados e as tabelas são criados automaticamente no primeiro acesso
 
 ## Esboços de Tela (Figma)
