@@ -187,7 +187,7 @@ Mini_sistema_produtos/
 
 | Tela | Preview |
 |------|---------|
-| Login | ![Login/Cadastro](docs/figma/tela-login.WEBP) |
+| Login/Cadastro | ![Login/Cadastro](docs/figma/tela-login.webp) |
 | Cadastro | ![Cadastro](docs/figma/tela-cadastro.png) |
 | Dashboard | ![Dashboard](docs/figma/tela-dashboard.png) |
 | CRUD Produtos | ![Produtos](docs/figma/tela-crud-produtos.png) |
